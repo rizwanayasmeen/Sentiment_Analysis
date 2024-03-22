@@ -4,7 +4,10 @@ import pandas as pd
 import numpy as np
 from transformers import DistilBertTokenizer, TFDistilBertModel
 import re
+import nltk
+nltk.download('stopwords')
 from nltk.corpus import stopwords
+nltk.download('WordNet')
 from nltk.stem import WordNetLemmatizer
 import tensorflow as tf
 
